@@ -26,4 +26,4 @@ Crear dos llamadas a sistema con sus respectivos comandos para apagar y reinicia
 
 
 URL commit: 
-
+https://github.com/RichardCT/so-gp1/commit/6973d7bcb1e25d629ffa5bd1a7c28c3872262e24
