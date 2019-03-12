@@ -22,3 +22,5 @@
 #define SYS_close  21
 #define SYS_shutdown 22
 #define SYS_reboot 23
+#define SYS_setPriority 24
+#define SYS_getPriority 25
