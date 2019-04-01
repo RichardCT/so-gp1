@@ -24,6 +24,8 @@ En esta práctica aprendí el tipo de schedulers que puede tener un sistema oper
 
 También vimos la PCB (Process Control Block), la cual es una tabla de procesos activos. Al explicarnos esta tabla, también revisamos la estructura de memoria que tiene un proceso activo. La memoria de dicho proceso se divide en 3 áreas: memoria de programa, donde se encuentra el código; el stack, donde se encuentran las variables temporales; y el heap, que es memoria de tamaño dinámico asignada en el run-time.
 
+Por último aprendimos que en el archivo proc.c se encuentra todo lo referente al scheduler de xv6. Fue en este archivo donde modificamos el código para que el scheduler ejecute procesos basados en su prioridad. Para esto, utilizamos nuestros conocimientos anteriores para crear dos llamadas a sistema para establecer una prioridad para un proceso y para cambiar la prioridad de un proceso. 
+
 
 # URL del commit
 https://github.com/RichardCT/so-gp1/commit/48a80afdef338ff3e0e4f2bdd796d81ac5c29540
