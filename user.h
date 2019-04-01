@@ -27,6 +27,7 @@ int shutdown(void);
 int reboot(void);
 int setPriority(int,int);
 int getPriority(int);
+int date(struct rtcdate *);
 
 // ulib.c
 int stat(const char*, struct stat*);
@@ -41,3 +42,6 @@ void* memset(void*, int, uint);
 void* malloc(uint);
 void free(void*);
 int atoi(const char*);
+
+void cmostime(struct rtcdate *r);
+

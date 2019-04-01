@@ -24,3 +24,4 @@
 #define SYS_reboot 23
 #define SYS_setPriority 24
 #define SYS_getPriority 25
+#define SYS_date   26
