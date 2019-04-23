@@ -103,3 +103,13 @@ sys_reboot(void)
 	outb(0x64, 0xFE);
 	return 0;
 }
+
+int
+sys_date(struct rtcdate *r)
+{
+ if (argptr(0, (void *)&r, sizeof(*r)) < 0)
+         return -1;
+// your code to print the date
+ cmostime(r);  
+ return 0;
+} 

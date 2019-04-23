@@ -1,7 +1,7 @@
 #include "types.h"
 #include "user.h"
 #include "date.h"
-#include "x86.h"
+/*#include "x86.h"
 
 #define SECS    0x00
 #define MINS    0x02
@@ -50,13 +50,13 @@ fill_rtcdate(struct rtcdate *r)
   r->month  = cmos_read(MONTH);
   r->year   = cmos_read(YEAR);
 }
-
+*/
 int
 main(int argc, char *argv[])
 {
 	struct rtcdate r;
 	date(&r);
-	struct rtcdate t1, t2;
+	/*struct rtcdate t1, t2;
     int sb, bcd;
 
     sb = cmos_read(0x0B);
@@ -87,7 +87,8 @@ main(int argc, char *argv[])
 
   	r = t1;
   	r.year += 2000;
-	printf(1, "date: %d:%d:%d  %d/%d/%d\n", r.hour, r.minute, r.second, r.day, r.month, r.year);
+	printf(1, "date: %d:%d:%d  %d/%d/%d\n", r.hour, r.minute, r.second, r.day, r.month, r.year); */
+	printf(1, "%d-%d-%d %d:%d:%d\n", r.year, r.month, r.day, r.hour, r.minute, r.second);
 	exit();
 	return 0;
 }
